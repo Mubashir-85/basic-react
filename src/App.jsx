@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Twowaysofincreament from './component/twowaysofincreament.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,8 @@ function App() {
     }
 
   }
-  
+
+ 
 
   return (
     <>
@@ -31,6 +33,9 @@ function App() {
       </button><br />
       <h1>Count:{count}</h1>
       <button onClick={decrementCount}>Decrease</button>
+
+      {/* <button onClick={setIncrement}>{increment}</button> */}
+      <Twowaysofincreament/>
 
     </>
   )
