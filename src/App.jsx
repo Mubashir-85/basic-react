@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Twowaysofincreament from './component/twowaysofincreament.jsx'
-
+import Bgchanger from './component/bgchanger.jsx'
 function App() {
   const [count, setCount] = useState(0)
   const incrementCount = () => {
@@ -36,6 +36,7 @@ function App() {
 
       {/* <button onClick={setIncrement}>{increment}</button> */}
       <Twowaysofincreament/>
+      <Bgchanger/>
 
     </>
   )
