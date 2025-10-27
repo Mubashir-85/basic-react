@@ -5,6 +5,7 @@ import './App.css'
 import Twowaysofincreament from './component/twowaysofincreament.jsx'
 import Bgchanger from './component/bgchanger.jsx'
 import Mapmethod from './component/Mapmethod.jsx'
+import ConditionalRendering from './component/ConditionalRendering.jsx'
 
 
 
@@ -43,6 +44,7 @@ function App() {
       <Bgchanger/>
 
       <Mapmethod/>
+      <ConditionalRendering/>
 
     </>
   )
