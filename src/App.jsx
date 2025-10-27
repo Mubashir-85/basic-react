@@ -6,10 +6,13 @@ import Twowaysofincreament from './component/twowaysofincreament.jsx'
 import Bgchanger from './component/bgchanger.jsx'
 import Mapmethod from './component/Mapmethod.jsx'
 import ConditionalRendering from './component/ConditionalRendering.jsx'
+import Props from './component/Props.jsx'
 
 
 
 function App() {
+
+  let colors = ["red", "blue", "green", "yellow", "pink"]
   const [count, setCount] = useState(0)
   const incrementCount = () => {
     if (count < 10) {
@@ -45,6 +48,7 @@ function App() {
 
       <Mapmethod/>
       <ConditionalRendering/>
+      <Props color={colors}/>
 
     </>
   )
