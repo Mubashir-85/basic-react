@@ -59,6 +59,11 @@ function App() {
       <Container>
       <Props color={colors}/>
       </Container>
+      <Container>
+        <p className='text-3xl'>This is the Example of Passing Children</p>
+      </Container>
+
+
 
     </>
   )
