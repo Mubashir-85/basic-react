@@ -7,6 +7,7 @@ import Bgchanger from './component/bgchanger.jsx'
 import Mapmethod from './component/Mapmethod.jsx'
 import ConditionalRendering from './component/ConditionalRendering.jsx'
 import Props from './component/Props.jsx'
+import Container from './component/Container.jsx'
 
 
 
@@ -36,11 +37,15 @@ function App() {
 
   return (
     <>
+    <Container>
+      <center>
       <button onClick={incrementCount}>
         Increament
       </button><br />
       <h1>Count:{count}</h1>
       <button onClick={decrementCount}>Decrease</button>
+      </center>
+      </Container>
 
       {/* <button onClick={setIncrement}>{increment}</button> */}
       <Twowaysofincreament/>
