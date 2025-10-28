@@ -53,7 +53,12 @@ function App() {
 
       <Mapmethod/>
       <ConditionalRendering/>
+
+
+
+      <Container>
       <Props color={colors}/>
+      </Container>
 
     </>
   )
