@@ -1,15 +1,20 @@
 import React from 'react'
+import Items from './Items'
 
-function Mapmethod() {
-    let fooditmes = ["idli", "dosa", "vada", "puri", "chapati", "paratha"]
+function Mapmethod({fooditems, handlebuy}) {
+   
   return (
   <>
 
-  <h1 className=''>List of Food Items</h1>
+
 
   <ul>
-    {fooditmes.map((items)=>(
-        <li key={items}>{items}</li>  // Adding key attribute for better performance and for optimization.
+    {fooditems.map((items)=>(
+        <Items
+        key={items}
+        fooditems={items}
+        handlebuy={()=> console.log(`${items} bought`)}
+        ></Items>
     ))}
   </ul>
   

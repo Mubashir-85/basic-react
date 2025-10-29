@@ -8,10 +8,17 @@ import Mapmethod from './component/Mapmethod.jsx'
 import ConditionalRendering from './component/ConditionalRendering.jsx'
 import Props from './component/Props.jsx'
 import Container from './component/Container.jsx'
+import Input from './component/input.jsx'
+
 
 
 
 function App() {
+   let fooditems = ["idli", "dosa", "vada", "puri", "chapati", "paratha"]
+   const handlechange = (e)=>{
+      console.log(e.target.value)
+   } 
+   
 
   let colors = ["red", "blue", "green", "yellow", "pink"]
   const [count, setCount] = useState(0)
@@ -43,7 +50,7 @@ function App() {
         Increament
       </button><br />
       <h1>Count:{count}</h1>
-      <button onClick={decrementCount}>Decrease</button>
+      <button onClick={decrementCount} >Decrease</button>
       </center>
       </Container>
 
@@ -51,7 +58,13 @@ function App() {
       <Twowaysofincreament/>
       <Bgchanger/>
 
-      <Mapmethod/>
+
+      <Container>
+        <h1 className=''>List of Food Items</h1>
+      <Input handlechange={handlechange}/>
+      <Mapmethod fooditems={fooditems} />
+      </Container>
+
       <ConditionalRendering/>
 
 
