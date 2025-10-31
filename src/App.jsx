@@ -14,18 +14,15 @@ function App() {
   const [fooditems, setFooditems] = useState([]);
   let inputRef = useRef();
   const handlechange = () => {
-    if(inputRef.current.value===""){
+    if (inputRef.current.value === "") {
       alert("Please enter a food item");
       return;
-    }else{
-      
-      let newFooditems = inputRef.current.value;
+    } else {
+      let newFooditems = inputRef.current.value.toUpperCase();
       inputRef.current.value = "";
       let Newfoods = [...fooditems, newFooditems];
       setFooditems(Newfoods);
     }
-
-    
   };
 
   let colors = ["red", "blue", "green", "yellow", "pink"];
