@@ -18,7 +18,7 @@ function App() {
       alert("Please enter a food item");
       return;
     } else {
-      let newFooditems = inputRef.current.value.toUpperCase();
+      let newFooditems = inputRef.current.value.trim().toUpperCase().replace(/\s+/g, " ");
       inputRef.current.value = "";
       let Newfoods = [...fooditems, newFooditems];
       setFooditems(Newfoods);
