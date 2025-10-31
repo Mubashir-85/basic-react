@@ -1,7 +1,7 @@
 import React from 'react'
 import Items from './Items'
 
-function Mapmethod({fooditems, handlebuy}) {
+function Mapmethod({fooditems}) {
    
   return (
   <>
@@ -9,9 +9,9 @@ function Mapmethod({fooditems, handlebuy}) {
 
 
   <ul>
-    {fooditems.map((items)=>(
+    {fooditems.map((items,index)=>(
         <Items
-        key={items}
+        key={index}
         fooditems={items}
         handlebuy={()=> console.log(`${items} bought`)}
         ></Items>
